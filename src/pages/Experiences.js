@@ -4,7 +4,7 @@ import Card from '../components/Card'
 
 function Experiences() {
   return (
-    <div className='flex flex-col justify-start items-center min-h-screen my-10 mx-5'>
+    <div className='flex flex-col justify-start items-center my-10 mx-5'>
         <span className='title-text'>
           PROGRAMMING EXPERIENCE
         </span>

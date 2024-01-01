@@ -4,6 +4,15 @@ import CloseIcon from '@mui/icons-material/Close';
 import { NavLink } from 'react-router-dom';
 
 function Header() {
+  const handleLinkClick = (sectionId) => {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      console.log('hello!');
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header className='bg-black text-white px-2 sm:flex sm:justify-between'>
@@ -32,10 +41,10 @@ function Header() {
 
 
       <div className={isOpen ? 'block pb-3 sm:block' : 'hidden sm:block'}>
-        <NavLink className='a-style'>About</NavLink>
-        <NavLink to={`experiences`} className='a-style'>Experiences</NavLink>
-        <NavLink to={`projects`} className='a-style'>Projects</NavLink>
-        <NavLink to={`contact`} className='a-style'>Contact</NavLink>
+        <NavLink onClick={() => handleLinkClick("about-section")} className='a-style'>About</NavLink>
+        <NavLink onClick={() => handleLinkClick("experience-section")} className='a-style'>Experiences</NavLink>
+        <NavLink onClick={() => handleLinkClick("project-section")} className='a-style'>Projects</NavLink>
+        <NavLink onClick={() => handleLinkClick("contact-section")} className='a-style'>Contact</NavLink>
       </div>
     </header>
   )

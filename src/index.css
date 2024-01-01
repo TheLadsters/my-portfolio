@@ -21,6 +21,19 @@
     }
 }
 
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+/* Contact Me */
+
+.contact-icons{
+    color: grey;
+}
+
+
 /* Footer */
 .site-icons{
     color: grey;

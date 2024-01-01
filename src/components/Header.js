@@ -8,7 +8,6 @@ function Header() {
     const section = document.getElementById(sectionId);
 
     if (section) {
-      console.log('hello!');
       section.scrollIntoView({ behavior: "smooth" });
     }
   };

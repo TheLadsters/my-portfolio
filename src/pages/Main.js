@@ -7,7 +7,7 @@ function Main() {
   return (
     <div>
       <div className='flex flex-col sm:flex-row p-4 sm:p-8 sm:gap-5'>
-        <div className='my-5 lg:w-11/12 lg:p-3'>
+        <div id="introduce-section" className='my-5 lg:w-11/12 lg:p-3'>
               <div className='max-w-3xl mb-5'>
                 <p className='font-bold text-xl lg:text-2xl xl:text-3xl fadeLeft'>Hello, My name is</p>
                 <p className='font-bold text-2xl lg:text-3xl ml-14 xl:text-4xl xl:ml-24 fadeLeft'>Jerald Blaise.</p>

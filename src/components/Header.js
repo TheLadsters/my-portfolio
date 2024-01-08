@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import { NavLink } from 'react-router-dom';
 
 function Header() {
   const handleLinkClick = (sectionId) => {
@@ -40,10 +39,10 @@ function Header() {
 
 
       <div className={isOpen ? 'block pb-3 sm:block' : 'hidden sm:block'}>
-        <NavLink onClick={() => handleLinkClick("about-section")} className='a-style'>About</NavLink>
-        <NavLink onClick={() => handleLinkClick("experience-section")} className='a-style'>Experiences</NavLink>
-        <NavLink onClick={() => handleLinkClick("project-section")} className='a-style'>Projects</NavLink>
-        <NavLink onClick={() => handleLinkClick("contact-section")} className='a-style'>Contact</NavLink>
+        <button onClick={() => handleLinkClick("about-section")} className='a-style'>About</button>
+        <button onClick={() => handleLinkClick("experience-section")} className='a-style'>Experiences</button>
+        <button onClick={() => handleLinkClick("project-section")} className='a-style'>Projects</button>
+        <button onClick={() => handleLinkClick("contact-section")} className='a-style'>Contact</button>
       </div>
     </header>
   )

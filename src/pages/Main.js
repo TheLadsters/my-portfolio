@@ -29,7 +29,7 @@ function Main() {
         </div>
 
         <div className='fadeRight'>
-            <img src='images\me.jpg' alt='Jerald' className='rounded-xl' />
+            <img src='../images/me.jpg' alt='Jerald' className='rounded-xl' />
         </div>
       </div>
 

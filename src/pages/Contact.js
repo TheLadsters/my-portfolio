@@ -4,7 +4,7 @@ import ContactCard from '../components/ContactCard'
 
 function Contact() {
   return (
-    <div className='flex flex-col justify-center items-center'>
+    <div className='flex flex-col justify-start items-center my-10 mx-5'>
       <span className='title-text mt-8'>
         Got Any Questions?
       </span>
